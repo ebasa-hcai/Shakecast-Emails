@@ -4,4 +4,8 @@
 
 -Takes max values of parameters (min for distance) and stores them in a csv
 
--Help inspectors prioritize facilities that were hit hardest by earthquakes
+-Helps inspectors prioritize facilities that were hit hardest by earthquakes
+
+-made using Tkinter GUI
+
+-run app.py

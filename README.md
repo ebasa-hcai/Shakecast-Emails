@@ -9,3 +9,7 @@
 -made using Tkinter GUI
 
 -run app.py
+
+
+- zipped folder contains the exe of the app
+- used pyinstaller to complie

@@ -98,7 +98,7 @@ class App:
                     print(final_df)
                     self.status_msg("Saving CSV File!! ")
 
-                    email_reader.save_csv(final_df)
+                    email_reader.save_csv(final_df,self.start_date,self.end_date)
                     
                 except Exception as e:
                     if str(e) == 'No objects to concatenate':
@@ -110,7 +110,7 @@ class App:
                         print({e})
             
         except:
-             self.status_msg(f"Please Select Dates Before Fetching Emails...")
+            self.status_msg(f"Please Select Dates Before Fetching Emails...")
             
 
     def run(self):

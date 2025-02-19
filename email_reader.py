@@ -178,7 +178,9 @@ class emailReader:
         
         return pd.merge(max_df, min_df, on='Short Name')
     
-    def save_csv(self, max_df):
+    def save_csv(self, max_df, start_date , end_date):
+        start_date = start_date.replace('/','-')
+        end_date = end_date.replace('/','-')
         currentDateTime = datetime.now().strftime("%m-%d-%Y %H-%M-%S %p")
-        max_df.to_csv(f"ShakeCast_table {currentDateTime}.csv", index = False)
+        max_df.to_csv(f"ShakeCast_table Date_Range- ({start_date}- {end_date}) ---- {currentDateTime}.csv", index = False)
         
